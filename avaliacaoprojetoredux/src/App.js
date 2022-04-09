@@ -1,25 +1,36 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+
+import Desafio from './components/Desafio'
+import Numero from './components/Numero'
+import Propriedades from './components/Propriedades'
+import Recesso from './components/Recesso'
+import Sorteio from './components/Sorteio'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>PROJETO AVALIATIVO REACT-REDUX 1º BIMESTRE</h1>
+      
+      <div className='linha'>
+        <Desafio></Desafio>
+      </div>
+      <div className='linha'>
+        <Numero></Numero>
+      </div>
+      <div className='linha'>
+        <Propriedades></Propriedades>
+      </div>
+      <div className='linha'>
+        <Sorteio></Sorteio>
+      </div>
+      <div className='linha'>
+        <Recesso></Recesso>
+      </div>
+
     </div>
-  );
+  )
 }
 
 export default App;
